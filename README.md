@@ -129,3 +129,9 @@ src/
 ```
 
 The camera tools are retained as part of the shared software suite. F-model operation does not require camera discovery or finger mapping.
+
+## Contributors
+
+Maintained and released by [Wonikrobotics-official](https://github.com/Wonikrobotics-official).
+
+- [shy0914](https://github.com/shy0914) — development and documentation contributions.

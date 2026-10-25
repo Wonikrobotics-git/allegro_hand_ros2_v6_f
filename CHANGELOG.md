@@ -4,6 +4,8 @@ Release versions follow semantic versioning (MAJOR.MINOR.PATCH) and use Git tags
 
 ## Unreleased
 
+- Correct the initial release author and tagger to Wonikrobotics-official while retaining contributor credit.
+- Credit shy0914 as a contributor in the README and commit metadata.
 - Use F and V consistently for model names in documentation and launch help.
 
 ## [1.0.0] - 2026-10-26
