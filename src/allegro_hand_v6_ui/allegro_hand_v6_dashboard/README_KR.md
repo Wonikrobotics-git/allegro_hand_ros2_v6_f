@@ -23,7 +23,7 @@ ros2 launch allegro_hand_v6_dashboard dashboard.launch.py hand:=left
 
 대시보드의 `hand`는 2D 이미지·센서 배치를 선택한다. 3D 모델은 bringup이 `/robot_description`으로
 발행하는 URDF와 TF를 사용하므로 **bringup에도 `hand:=left`를 지정해야 한다**.
-`model:=v6_f`는 force 모델, `model:=v6_v`는 vision 모델을 선택한다.
+`model:=v6_f`는 F 모델, `model:=v6_v`는 V 모델을 선택한다.
 대시보드 상단에 실제 수신한 모델·손 방향이 표시된다. `Waiting`은 URDF 미수신,
 `Legacy or custom URDF`는 구형 또는 별도 URDF, 손 방향 불일치 메시지는 bringup 인자 확인이 필요함을 뜻한다.
 구형 `R10_Link` 계열 모델이 계속 나오면 기존 robot_state_publisher/bringup을 종료한 뒤 새 환경에서 다시 시작한다.

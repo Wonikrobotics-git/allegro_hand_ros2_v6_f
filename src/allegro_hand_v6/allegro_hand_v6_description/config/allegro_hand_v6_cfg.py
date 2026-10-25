@@ -1,6 +1,6 @@
 # Copyright (c) 2026, VoidRobot wr_humanoid. All rights reserved.
 """
-Isaac Lab Articulation Configuration for Allegro Hand V6 (v6_f Force / v6_v Vision, Right / Left).
+Isaac Lab Articulation Configuration for Allegro Hand V6 (v6_f F / v6_v V, Right / Left).
 Supports 5-finger 20-DOF architecture (Thumb, Index, Middle, Ring, Pinky).
 """
 import os
@@ -51,11 +51,11 @@ def _make_v6_cfg(model_variant: str, hand_side: str) -> ArticulationCfg:
         },
     )
 
-# Force model (v6_f) configs
+# F model (v6_f) configs
 ALLEGRO_HAND_V6_F_RIGHT_CFG = _make_v6_cfg("v6_f", "right")
 ALLEGRO_HAND_V6_F_LEFT_CFG = _make_v6_cfg("v6_f", "left")
 
-# Vision model (v6_v) configs
+# V model (v6_v) configs
 ALLEGRO_HAND_V6_V_RIGHT_CFG = _make_v6_cfg("v6_v", "right")
 ALLEGRO_HAND_V6_V_LEFT_CFG = _make_v6_cfg("v6_v", "left")
 

@@ -5,7 +5,7 @@ Validation date: **2026-10-22**.
 ## Final DAE Reference Refresh (2026-10-22)
 
 Authoritative source: `references/V6_URDF_to_Customer_final/V6_URDF_to_Customer`.
-All 146 Force/Vision left/right DAE files now match that source byte for byte;
+All 146 F/V left/right DAE files now match that source byte for byte;
 112 differing files were replaced and the other 34 already matched. Material
 colors are taken directly from the final exports, including the silver power
 section. Before/after rendered comparisons were inspected for all four variants.
@@ -42,7 +42,7 @@ not repeat the combined Jazzy build or physical-device tests described below.
 
 ## Source Refresh on 2026-10-22
 
-The refreshed source includes the Force/Vision left/right mesh updates and
+The refreshed source includes the F/V left/right mesh updates and
 500 Hz CSV recording with IMU fields excluded. Post-refresh checks completed:
 
 - All 146 model/hand STL files match their respective reference exports byte for byte.

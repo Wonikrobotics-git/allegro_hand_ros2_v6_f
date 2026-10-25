@@ -71,7 +71,7 @@ def generate_launch_description():
             'model',
             default_value='v6_f',
             choices=['v6_f', 'v6_v'],
-            description='Allegro Hand V6 model variant: v6_f (force) or v6_v (vision)'
+            description='Allegro Hand V6 model variant: v6_f (F) or v6_v (V)'
         ),
         DeclareLaunchArgument(
             'hand',

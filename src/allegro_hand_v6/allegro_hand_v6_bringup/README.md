@@ -56,13 +56,13 @@ This activates the physical hardware interface. Pose commands move real joints. 
 ros2 launch allegro_hand_v6_dashboard dashboard.launch.py hand:=right
 ```
 
-**The F model does not require vision sensor capture or finger mapping.** The V model's camera workflow is documented in the [UI guide](../../allegro_hand_v6_ui/README.md#camera-capture-and-finger-mapping).
+**The F model does not require camera capture or finger mapping.** The V model's camera workflow is documented in the [UI guide](../../allegro_hand_v6_ui/README.md#camera-capture-and-finger-mapping).
 
 ## Launch Arguments
 
 | Argument | Default | Purpose |
 |---|---|---|
-| `model` | `v6_f` | Robot variant: `v6_f` (Force) or `v6_v` (Vision). |
+| `model` | `v6_f` | Robot variant: `v6_f` (F) or `v6_v` (V). |
 | `hand` | `right` | Robot side: `right` or `left`. |
 | `ros2_control_hardware_type` | `hardware` | Use `hardware` for the physical hand or `mock_components` for a device-free check. |
 | `io_interface_descriptor` | `modbus_tcp:192.168.1.100:502` | Physical hand's communication endpoint. |

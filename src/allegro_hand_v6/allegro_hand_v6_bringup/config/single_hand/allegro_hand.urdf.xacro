@@ -12,7 +12,7 @@
     <xacro:property name="model_arg" value="$(arg model)"/>
     <xacro:property name="hand_arg" value="$(arg hand)"/>
 
-    <!-- v6_f (Force model) -->
+    <!-- v6_f (F model) -->
     <xacro:if value="${model_arg == 'v6_f'}">
         <xacro:if value="${hand_arg == 'right'}">
             <xacro:include filename="$(find allegro_hand_v6_description)/urdf/allegro_hand_v6_f_right.urdf.xacro" />
@@ -22,7 +22,7 @@
         </xacro:if>
     </xacro:if>
 
-    <!-- v6_v (Vision model) -->
+    <!-- v6_v (V model) -->
     <xacro:if value="${model_arg == 'v6_v'}">
         <xacro:if value="${hand_arg == 'right'}">
             <xacro:include filename="$(find allegro_hand_v6_description)/urdf/allegro_hand_v6_v_right.urdf.xacro" />

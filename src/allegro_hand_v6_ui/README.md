@@ -154,7 +154,7 @@ ros2 launch allegro_hand_v6_dashboard dashboard.launch.py hand:=left
 
 The 3D and 2D left-hand views should appear. Physical pressure readings and camera images require connected devices; mock bringup verifies model and joint-state integration.
 
-The dashboard's `hand` argument selects its 2D image and sensor layout. The **3D model comes from the base bringup's `/robot_description` and TF**, so specify the same hand in both commands. Use `hand:=right` in both terminals for a right hand. Select `model:=v6_f` in bringup for the force model, or `model:=v6_v` for the vision model.
+The dashboard's `hand` argument selects its 2D image and sensor layout. The **3D model comes from the base bringup's `/robot_description` and TF**, so specify the same hand in both commands. Use `hand:=right` in both terminals for a right hand. Select `model:=v6_f` in bringup for the F model, or `model:=v6_v` for the V model.
 
 Stop any previous bringup or robot-state publisher before starting another publisher on the same model and TF topics.
 

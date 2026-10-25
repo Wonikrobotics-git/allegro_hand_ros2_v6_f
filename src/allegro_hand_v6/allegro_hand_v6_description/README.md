@@ -6,14 +6,14 @@ Allegro Hand V6 (Right / Left) 로봇 묘사(Description) 및 자산 관리 패�
 
 ## 1. 패키지 구성 및 디렉터리 레이아웃
 * **`urdf/`**:
-  * `allegro_hand_v6_f_right.urdf` / `allegro_hand_v6_f_left.urdf`: 힘 센서형(Force) 모델 정적 URDF 및 `.xacro` 래퍼.
-  * `allegro_hand_v6_v_right.urdf` / `allegro_hand_v6_v_left.urdf`: 촉각 센서형(Vision) 모델 정적 URDF 및 `.xacro` 래퍼.
+  * `allegro_hand_v6_f_right.urdf` / `allegro_hand_v6_f_left.urdf`: F 모델 정적 URDF 및 `.xacro` 래퍼.
+  * `allegro_hand_v6_v_right.urdf` / `allegro_hand_v6_v_left.urdf`: V 모델 정적 URDF 및 `.xacro` 래퍼.
   * `allegro_hand_v6_right.urdf.xacro` / `allegro_hand_v6_left.urdf.xacro`: 하위 호환 브릿지 Xacro (기본 `v6_f` 모델 연동).
 * **`config/`**:
   * `joint_names_allegro_hand_v6.yaml`: V6 표준 관절 명칭 정의 파일.
 * **`meshes/`**:
-  * `v6_f/`: 힘 센서형(Force) 오른손/왼손 DAE 및 STL 메쉬 자산.
-  * `v6_v/`: 촉각 센서형(Vision) 오른손/왼손 DAE 및 STL 메쉬 자산.
+  * `v6_f/`: F 오른손/왼손 DAE 및 STL 메쉬 자산.
+  * `v6_v/`: V 오른손/왼손 DAE 및 STL 메쉬 자산.
 * **`rviz/`**:
   * `allegro_hand_v6.rviz`: RViz2 가시화 설정 파일.
 * **`launch/`**:
@@ -29,10 +29,10 @@ Allegro Hand V6 (Right / Left) 로봇 묘사(Description) 및 자산 관리 패�
 
 | 모델 / 손 | 레퍼런스 | 패키지 메시 경로 |
 |---|---|---|
-| Force / 왼손 | `references/F_Version_L/meshes` | `meshes/v6_f/left` |
-| Force / 오른손 | `references/F_Version_R/meshes` | `meshes/v6_f/right` |
-| Vision / 왼손 | `references/V_Version_L/meshes` | `meshes/v6_v/left` |
-| Vision / 오른손 | `references/V_Version_R/meshes` | `meshes/v6_v/right` |
+| F / 왼손 | `references/F_Version_L/meshes` | `meshes/v6_f/left` |
+| F / 오른손 | `references/F_Version_R/meshes` | `meshes/v6_f/right` |
+| V / 왼손 | `references/V_Version_L/meshes` | `meshes/v6_v/left` |
+| V / 오른손 | `references/V_Version_R/meshes` | `meshes/v6_v/right` |
 
 충돌용 STL은 해당 레퍼런스 파일을 사용한다. 화면용 DAE 146개는
 `references/V6_URDF_to_Customer_final/V6_URDF_to_Customer`의 모델별·좌우별

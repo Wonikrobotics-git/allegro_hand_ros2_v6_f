@@ -1,6 +1,6 @@
 # Allegro Hand V6 F — ROS 2 Jazzy
 
-ROS 2 software for the **Allegro Hand V6 F (Force model)**, a five-finger robotic hand with 20 actuated joints. This repository includes the hardware driver, robot models, controller bringup, and UI applications in one workspace.
+ROS 2 software for the **Allegro Hand V6 F**, a five-finger robotic hand with 20 actuated joints. This repository includes the hardware driver, robot models, controller bringup, and UI applications in one workspace.
 
 **Version: 1.0.0** · **Ubuntu 24.04 LTS / ROS 2 Jazzy**
 
@@ -10,10 +10,10 @@ Release versions use semantic versioning and Git tags such as `v1.0.0`. See [CHA
 
 The F and V models share the same control software. Select the model that matches your physical hand when launching bringup:
 
-| Model | Bringup argument | Vision sensor mapping |
+| Model | Bringup argument | Camera mapping |
 |---|---|---|
 | **V6 F** (this repository) | `model:=v6_f` | **Not required.** Proceed directly to bringup and the UI. |
-| V6 V | `model:=v6_v` | Follow the vision sensor guide when using the finger cameras. |
+| V6 V | `model:=v6_v` | Follow the camera guide when using the finger cameras. |
 
 All examples below use the **F model, right hand**. For a left hand, use `hand:=left` in both bringup and the dashboard. The shared UI documentation also covers V-model cameras; those capture and mapping steps do not apply to the F model.
 
@@ -89,7 +89,7 @@ Open the dashboard in terminal 2:
 ros2 launch allegro_hand_v6_dashboard dashboard.launch.py hand:=right
 ```
 
-The dashboard displays the robot model and joint feedback from bringup. Its `hand` argument selects the 2D hand layout; the 3D model comes from bringup. Physical pressure readings require a connected hand. **No vision sensor mapping is needed for the F model.**
+The dashboard displays the robot model and joint feedback from bringup. Its `hand` argument selects the 2D hand layout; the 3D model comes from bringup. Physical pressure readings require a connected hand. **No camera mapping is needed for the F model.**
 
 ## Run with a Physical Hand
 
@@ -125,7 +125,7 @@ Recording is disabled by default. CSV files contain timestamps, status counters,
 src/
 ├── allegro_hand_common/   # Shared messages, I/O, utilities, and controllers
 ├── allegro_hand_v6/       # Bringup, robot descriptions, and hardware driver
-└── allegro_hand_v6_ui/    # Dashboard, pose GUI, browser monitor, and vision tools
+└── allegro_hand_v6_ui/    # Dashboard, pose GUI, browser monitor, and camera tools
 ```
 
-The vision tools are retained as part of the shared software suite. F-model operation does not require camera discovery or finger mapping.
+The camera tools are retained as part of the shared software suite. F-model operation does not require camera discovery or finger mapping.
