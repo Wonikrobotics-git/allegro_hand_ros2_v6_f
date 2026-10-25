@@ -12,8 +12,8 @@ The F and V models share the same control software. Select the model that matche
 
 | Model | Bringup argument | Vision sensor mapping |
 |---|---|---|
-| **V6 F — Force** (this repository) | `model:=v6_f` | **Not required.** Proceed directly to bringup and the UI. |
-| V6 V — Vision | `model:=v6_v` | Follow the vision sensor guide when using the finger cameras. |
+| **V6 F** (this repository) | `model:=v6_f` | **Not required.** Proceed directly to bringup and the UI. |
+| V6 V | `model:=v6_v` | Follow the vision sensor guide when using the finger cameras. |
 
 All examples below use the **F model, right hand**. For a left hand, use `hand:=left` in both bringup and the dashboard. The shared UI documentation also covers V-model cameras; those capture and mapping steps do not apply to the F model.
 
