@@ -1,5 +1,7 @@
 # Allegro Hand V6 F — ROS 2 Jazzy
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ROS 2 software for the **Allegro Hand V6 F**, a five-finger robotic hand with 20 actuated joints. This repository includes the hardware driver, robot models, controller bringup, and UI applications in one workspace.
 
 **Version: 1.0.0** · **Ubuntu 24.04 LTS / ROS 2 Jazzy**
@@ -135,3 +137,11 @@ The camera tools are retained as part of the shared software suite. F-model oper
 Maintained and released by [Wonikrobotics-official](https://github.com/Wonikrobotics-official).
 
 - [shy0914](https://github.com/shy0914) — development and documentation contributions.
+
+## License
+
+Licensed under the [MIT License](LICENSE), except where an individual file or package specifies another license. Existing copyright and license notices are retained, including BSD and Apache-2.0 notices.
+
+Copyright (c) 2026 WonikRobotics_official.
+
+See also the dashboard's [third-party notices](src/allegro_hand_v6_ui/allegro_hand_v6_dashboard/THIRD_PARTY_NOTICES.md) for its external libraries.
