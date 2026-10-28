@@ -49,7 +49,7 @@ Examples below use the **F model, right hand**. For a left hand, use `hand:=left
 Install **ROS 2 Jazzy Desktop on Ubuntu 24.04**, then build the base packages and UI together using the steps below.
 
 > [!NOTE]
-> This is a complete workspace. The UI manual also covers a separate UI distribution; use this README for installation of the combined repository.
+> This repository contains the complete base and UI workspace. All guides use the same installation; source its `install/setup.bash` in each terminal.
 
 ### 1. Clone the Repository
 
@@ -127,7 +127,7 @@ Follow the [hardware setup guide](src/allegro_hand_v6/allegro_hand_v6_bringup/RE
 
 **Terminal 1 — Start the hardware driver**
 
-Use the actual IP address and port of your hand. This command activates the physical hardware interface:
+Use the actual IP address and port of your hand. The position controller enables torque automatically; no GUI Servo ON action is needed. This command activates the physical hardware interface:
 
 ```bash
 ros2 launch allegro_hand_v6_bringup allegro_hand.launch.py \
@@ -139,7 +139,7 @@ ros2 launch allegro_hand_v6_bringup allegro_hand.launch.py \
 
 In terminal 2, launch the dashboard as shown above. Sending poses from the pose GUI commands real joints.
 
-For pose saving, sequences, and browser plots, see [UI usage](src/allegro_hand_v6_ui/README.md#optional-pose-control-gui). Use the same hand setting and `ROS_DOMAIN_ID` across applications.
+For an English walkthrough from feedback checks to a first mock movement and a pose sequence, see [First pose and sequence](src/allegro_hand_v6_ui/allegro_hand_v6_gui/README.md#first-pose-and-sequence). For browser plots, see [UI usage](src/allegro_hand_v6_ui/README.md#optional-browser-monitor). Use the same hand setting and `ROS_DOMAIN_ID` across applications.
 
 <a id="ui-applications"></a>
 
@@ -191,7 +191,7 @@ The camera tools are retained as part of the shared software suite. F-model oper
 | [Bringup and hardware setup](src/allegro_hand_v6/allegro_hand_v6_bringup/README.md) | Ethernet setup, mock and physical operation, launch arguments, and controller checks. |
 | [UI usage](src/allegro_hand_v6_ui/README.md) | Dashboard, pose control GUI, browser monitor, and their ROS interfaces. |
 | [Dashboard manual](src/allegro_hand_v6_ui/allegro_hand_v6_dashboard/README.md) | Visualization, pressure display, layouts, and dashboard settings. |
-| [CSV recording guide (Korean)](src/allegro_hand_v6/allegro_hand_v6_bringup/CSV_LOGGING.md) | Recording options, data columns, and rate checks. |
+| [CSV recording guide](src/allegro_hand_v6/allegro_hand_v6_bringup/CSV_LOGGING.md) | Recording options, data columns, and rate checks. |
 | [Validation record](VALIDATION.md) | Recorded build and mock checks, source refreshes, and verification scope. |
 
 Version **1.0.0** uses semantic versioning and Git tags such as `v1.0.0`. See the [changelog](CHANGELOG.md) for release history.
